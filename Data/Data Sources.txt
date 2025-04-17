@@ -1,0 +1,4 @@
+1: https://www.kaggle.com/datasets/cs49adityarajsharma/credit-scoring-data?resource=download
+
+FreddieMac: https://www.freddiemac.com/research/datasets
+https://www.sciencedirect.com/science/article/pii/S2352340924002312
