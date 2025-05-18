@@ -1,0 +1,179 @@
+﻿lei​
+* Description: A financial institution’s Legal Entity Identifier
+* Values:
+   * Varying values
+derived_msa-md​
+* Description: The 5 digit derived MSA (metropolitan statistical area) or MD (metropolitan division) code. An MSA/MD is an area that has at least one urbanized area of 50,000 or more population.
+* Values:
+   * Varying values
+state_code​
+* Description: Two-letter state code
+* Values:
+   * Varying values
+county_code​
+* Description: State-county FIPS code
+* Values:
+   * Varying values
+census_tract​
+* Description: 11 digit census tract number
+* Values:
+   * Varying values
+derived_loan_product_type​
+* Description: Derived loan product type from Loan Type and Lien Status fields for easier querying of specific records
+* Values:
+   * Conventional:First Lien
+   * FHA:First Lien
+   * VA:First Lien
+   * FSA/RHS:First Lien
+   * Conventional:Subordinate Lien
+   * FHA:Subordinate Lien
+   * VA:Subordinate Lien
+   * FSA/RHS:Subordinate Lien
+derived_dwelling_category​
+* Description: Derived dwelling type from Construction Method and Total Units fields for easier querying of specific records
+* Values:
+   * Single Family (1-4 Units):Site-Built
+   * Multifamily:Site-Built (5+ Units)
+   * Single Family (1-4 Units):Manufactured
+derived_ethnicity​
+* Description: Single aggregated ethnicity categorization derived from applicant/borrower and co-applicant/co-borrower ethnicity fields
+* Values:
+   * Hispanic or Latino
+   * Not Hispanic or Latino
+   * Joint
+   * Ethnicity Not Available
+   * Free Form Text Only
+derived_race​
+* Description: Single aggregated race categorization derived from applicant/borrower and co-applicant/co-borrower race fields
+* Values:
+   * American Indian or Alaska Native
+   * Asian
+   * Black or African American
+   * Native Hawaiian or Other Pacific Islander
+   * White
+   * 2 or more minority races
+   * Joint
+   * Free Form Text Only
+   * Race Not Available
+derived_sex​
+* Description: Single aggregated sex categorization derived from applicant/borrower and co-applicant/co-borrower sex fields
+* Values:
+   * Male
+   * Female
+   * Joint
+   * Sex Not Available
+   * Multifamily:Manufactured (5+ Units)
+purchaser_type​
+* Description: Type of entity purchasing a covered loan from the institution
+* Values:
+   * 0 - Not applicable
+   * 1 - Fannie Mae
+   * 2 - Ginnie Mae
+   * 3 - Freddie Mac
+   * 4 - Farmer Mac
+   * 5 - Private securitizer
+   * 6 - Commercial bank, savings bank, or savings association
+   * 71 - Credit union, mortgage company, or finance company
+   * 72 - Life insurance company
+   * 8 - Affiliate institution
+   * 9 - Other type of purchaser
+loan_type​
+* Description: The type of covered loan or application
+* Values:
+   * 1 - Conventional (not insured or guaranteed by FHA, VA, RHS, or FSA)
+   * 2 - Federal Housing Administration insured (FHA)
+   * 3 - Veterans Affairs guaranteed (VA)
+   * 4 - USDA Rural Housing Service or Farm Service Agency guaranteed (RHS or FSA)
+loan_purpose​
+* Description: The purpose of covered loan or application
+* Values:
+   * 1 - Home purchase
+   * 2 - Home improvement
+   * 31 - Refinancing
+   * 32 - Cash-out refinancing
+   * 4 - Other purpose
+   * 5 - Not applicable
+loan_amount​
+* Description: The amount of the covered loan, or the amount applied for
+* Values:
+   * Varying values
+combined_loan_to_value_ratio​
+* Description: The ratio of the total amount of debt secured by the property to the value of the property relied on in making the credit decision
+* Values:
+   * Varying values
+property_value​
+* Description: The value of the property securing the covered loan or, in the case of an application, proposed to secure the covered loan, relied on in making the credit decision
+* Values:
+   * Varying values; Rounded to the midpoint of the nearest $10,000 interval for which the reported value falls
+income​
+* Description: The gross annual income, in thousands of dollars, relied on in making the credit decision, or if a credit decision was not made, the gross annual income relied on in processing the application
+* Values:
+   * Varying values
+debt_to_income_ratio​
+* Description: The ratio, as a percentage, of the applicant’s or borrower’s total monthly debt to the total monthly income relied on in making the credit decision
+* Varying values; Ratios binned are:
+   * <20%
+   * 20%-<30%
+   * 30%-<36%
+   * 36%
+   * 37%
+   * 38%
+   * 39%
+   * 40%
+   * 41%
+   * 42%
+   * 43%
+   * 44%
+   * 45%
+   * 46%
+   * 47%
+   * 48%
+   * 49%
+   * 50%-60%
+   * >60%
+   * NA
+   * Exempt
+applicant​_age
+* Description: The age of the applicant
+* Values:
+   * <25
+   * 25-34
+   * 35-44
+   * 45-54
+   * 55-64
+   * 65-74
+   * >74
+   * 8888
+tract_population​
+* Description: Total population in tract
+* Values:
+   * Varying values
+tract_minority_population_percent​
+* Description: Percentage of minority population to total population for tract, rounded to two decimal places
+* Values:
+   * Varying values
+ffiec_msa_md_median_family_income​
+* Description: FFIEC Median family income in dollars for the MSA/MD in which the tract is located (adjusted annually by FFIEC)
+* Values:
+   * Varying values
+tract_to_msa_income_percentage​
+* Description: Percentage of tract median family income compared to MSA/MD median family income
+* Values:
+   * Varying values
+tract_owner_occupied_units​
+* Description: Number of dwellings, including individual condominiums, that are lived in by the owner
+* Values:
+   * Varying values
+tract_one_to_four_family_homes​
+* Description: Dwellings that are built to houses with fewer than 5 families
+* Values:
+   * Varying values
+tract_median_age_of_housing_units​
+* Description: Tract median age of homes
+* Values:
+   * Varying values
+Approved (1 = Yes) (Base)
+* Description: True approval status of the loan application
+* Values:
+   * 0 - Not Approved
+   * 1 - Approved
