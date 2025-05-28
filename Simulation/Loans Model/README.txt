@@ -1,0 +1,3 @@
+For loans_analysis_original jupyter notebook, simply run elements in order. Adjust synthetic data increment and generation number to desired level.
+
+For loans_analyis (multiple runs), run elements in order until reaching the end of the first visualization chunk. After this, reload dataset and data preparation chunk before continuing with the next percentage increment in order to avoid stacking of data points. Repeat this for the third increment that is present.
